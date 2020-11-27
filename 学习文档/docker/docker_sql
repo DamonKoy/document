@@ -1,0 +1,53 @@
+
+mysqldump -uroot -p1z2x3c4v5b6n7m chumanAndroid542 > chumanAndroid542.sql
+exit
+sudo docker cp 34aa0aed191e:/chumanAndroid542.sql sql/chumanAndroid542.sql
+sudo docker cp sql 51ea579affb7:sql
+sudo docker exec -it -u root mysql-prod /bin/bash
+mysql -uroot -p1z2x3c4v5b6n7m chumanAndroid542< /sql/chumanAndroid542.sql
+
+
+
+$ mysqldump -u root -p database_name \
+       | mysql -h  database_name
+
+
+
+172.17.0.3
+mysqldump -uroot -p1z2x3c4v5b6n7m chuman_qa_platform \
+       | mysql -h 172.17.0.4 chuman_qa_platform
+
+mysqldump -h 172.17.0.4 -u root -p 1z2x3c4v5b6n7m chuman_qa_platform > chuman_qa_platform.sql
+
+mysqldump -h 172.17.0.4 -P 4306 -u root -p chuman_qa_platform > chuman_qa_platform.sql
+
+
+
+
+sudo docker exec -it 51ea579affb7 mysqldump -uroot -p1z2x3c4v5b6n7m -B chuman_qa_platform devices > mysql-backup/chuman_qa_platform-111.sql
+
+
+
+
+sudo docker exec 34aa0aed191e mysql -uroot -p1z2x3c4v5b6n7m chuman_qa_platform < /home/test/mysql-backup/chuman_qa_platform-111.sql
+
+
+
+sudo docker exec -it -u root 34aa0aed191e /bin/bash
+
+
+mysql -uroot -p1z2x3c4v5b6n7m chuman_qa_platform < /mysql-backup/chuman_qa_platform-202010191825.sql
+
+
+
+
+
+prod同步到dev：
+chuman_qa_platform device_transfer_record、devices
+
+
+dev同步到prod：
+chumanAndroid523
+chumanAndroid530
+chumanAndroid542
+chumanAndroid550
