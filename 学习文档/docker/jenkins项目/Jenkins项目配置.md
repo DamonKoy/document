@@ -280,6 +280,6 @@ sleep 2
 pytest -v -s -m=${mark} ./testcases/${module}  --alluredir ${WORKSPACE}/allure_results
 ```
 
-![image-20201014154819459](/Users/damon/Library/Application Support/typora-user-images/image-20201014154819459.png)
+![image-20201014154819459](https://raw.githubusercontent.com/DamonKoy/document/dev/images/jenkins%E6%9E%84%E5%BB%BA1.png)
 
-![image-20201014154846581](/Users/damon/Library/Application Support/typora-user-images/image-20201014154846581.png)
+![image-20201014154846581](https://raw.githubusercontent.com/DamonKoy/document/dev/images/jenkins%E6%9E%84%E5%BB%BA2.png)

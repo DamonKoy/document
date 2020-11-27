@@ -63,7 +63,7 @@ docker volume create jenkins_data
 sudo docker run -d --name jenkins --restart always -p 5000:5000  -p 8080:8080 -p 50000:50000 -v /home/test/jenkins:/home/test/var/jenkins_home jenkins/jenkins:lts
 ```
 
-![image-20200709190541585](/Users/damon/Library/Application Support/typora-user-images/image-20200709190541585.png)
+![image-20200709190541585](https://raw.githubusercontent.com/DamonKoy/document/dev/images/docker%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4.png)
 
 #### 查看容器进程：
 
@@ -71,7 +71,7 @@ sudo docker run -d --name jenkins --restart always -p 5000:5000  -p 8080:8080 -p
 sudo docker ps -a
 ```
 
-![image-20200709190638633](/Users/damon/Library/Application Support/typora-user-images/image-20200709190638633.png)
+<img src="https://raw.githubusercontent.com/DamonKoy/document/dev/images/docker%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E8%BF%9B%E7%A8%8B.png" alt="image-20200709190638633"  />
 
 #### 通过查看容器log进行查找jenkins初始密码：（xxxx 容器 为ID）
 
@@ -79,7 +79,7 @@ sudo docker ps -a
 sudo docker logs XXXX
 ```
 
-![image-20200709190807940](/Users/damon/Library/Application Support/typora-user-images/image-20200709190807940.png)
+![image-20200709190807940](https://raw.githubusercontent.com/DamonKoy/document/dev/images/docker%E6%9F%A5%E7%9C%8Blog.png)
 
 #### 通过内网访问服务器jenkins
 
