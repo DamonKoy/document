@@ -1,4 +1,4 @@
-package ruqi.test.fengzhiquan.project2;
+package project2;
 
 public class Qin extends Knights {
     public Qin(String name, int age, char sex) {

@@ -1,4 +1,4 @@
-package ruqi.test.fengzhiquan.project2;
+package project2;
 
 public class Youla extends Knights {
     public Youla(String name, int age, char sex) {

@@ -1,4 +1,4 @@
-package ruqi.test.fengzhiquan.project1;
+package project1;
 
 import java.util.Scanner;
 

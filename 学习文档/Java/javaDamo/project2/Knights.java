@@ -1,4 +1,4 @@
-package ruqi.test.fengzhiquan.project2;
+package project2;
 
 
 

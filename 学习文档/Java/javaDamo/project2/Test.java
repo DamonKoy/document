@@ -1,4 +1,4 @@
-package ruqi.test.fengzhiquan.project2;
+package project2;
 
 public class Test {
     public static void main(String[] args){
